@@ -1,0 +1,17 @@
+[
+  {
+    "id": 17,
+    "domain": "compliance",
+    "actual_domain": "compliance",
+    "domain_correct": 1,
+    "confidence": "high",
+    "question": "What is the threshold for Cash Transaction Report (CTR) filing?",
+    "answer": "According to the FinTrust Bank Compliance Manual, a Cash Transaction Report (CTR) is required for:\n\n*   Cash transactions above **Rs. 10,00,000** in a single transaction.\n*   Connected series of cash transactions aggregating to **Rs. 10,00,000** in a month.\n\nThese reports must be filed by the 15th of the following month. Adherence to these reporting thresholds is crucial for maintaining compliance with regulatory guidelines.",
+    "ground_truth": "A Cash Transaction Report (CTR) must be filed for all cash transactions of Rs. 10 lakh or more in a single day, whether single or multiple transactions by the same customer.",
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "context_precision": 0.167,
+    "context_recall": 0.6,
+    "ragas_score": 0.692
+  }
+]

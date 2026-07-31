@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "domain": "loans",
+    "question": "What is the maximum loan tenure for a home loan at FinTrust?",
+    "ground_truth": "The maximum loan tenure for a FinTrust home loan is 30 years for standard home purchase variants, and 25 years for self-construction or plot-and-construction loans."
+  },
+  {
+    "id": 2,
+    "domain": "loans",
+    "question": "What documents are required to apply for a personal loan?",
+    "ground_truth": "Documents required include identity proof (Aadhaar/PAN), address proof, latest salary slips (3 months), bank statements (6 months), and employment certificate or offer letter."
+  },
+  {
+    "id": 3,
+    "domain": "loans",
+    "question": "What is the maximum LTV ratio for a vehicle loan?",
+    "ground_truth": "The maximum Loan-to-Value ratio for a vehicle loan is typically up to 90% of the on-road price of the vehicle."
+  },
+  {
+    "id": 4,
+    "domain": "loans",
+    "question": "Can a self-employed person apply for a home loan at FinTrust?",
+    "ground_truth": "Yes, self-employed individuals can apply for a home loan. They need to provide business proof, ITR for the last 2-3 years, and audited financial statements."
+  },
+  {
+    "id": 5,
+    "domain": "deposits",
+    "question": "What is the minimum amount to open a fixed deposit at FinTrust?",
+    "ground_truth": "The minimum amount to open a fixed deposit at FinTrust is typically Rs. 1,000 or Rs. 5,000 depending on the product variant."
+  },
+  {
+    "id": 6,
+    "domain": "deposits",
+    "question": "What happens if a fixed deposit is broken before maturity?",
+    "ground_truth": "A premature withdrawal penalty is levied, typically 0.5% to 1% reduction from the applicable rate, and interest is paid at the rate applicable for the actual period the deposit was held."
+  },
+  {
+    "id": 7,
+    "domain": "deposits",
+    "question": "Can NRIs open fixed deposits at FinTrust Bank?",
+    "ground_truth": "Yes, NRIs can open NRE (Non-Resident External) and NRO (Non-Resident Ordinary) fixed deposits at FinTrust Bank."
+  },
+  {
+    "id": 8,
+    "domain": "deposits",
+    "question": "What is the minimum tenure for a recurring deposit at FinTrust?",
+    "ground_truth": "The minimum tenure for a recurring deposit is typically 6 months, with installments paid on a monthly basis."
+  },
+  {
+    "id": 9,
+    "domain": "accounts",
+    "question": "What is the minimum balance requirement for a FinTrust savings account?",
+    "ground_truth": "The minimum average monthly balance (AMB) for a FinTrust savings account varies by account type, typically ranging from Rs. 1,000 to Rs. 10,000 for standard variants."
+  },
+  {
+    "id": 10,
+    "domain": "accounts",
+    "question": "What KYC documents are needed to open a current account?",
+    "ground_truth": "KYC documents for a current account include identity proof (PAN, Aadhaar), address proof, passport-sized photographs, and business registration documents (for proprietorships or companies)."
+  },
+  {
+    "id": 11,
+    "domain": "accounts",
+    "question": "What are the charges for non-maintenance of minimum balance in a savings account?",
+    "ground_truth": "Non-maintenance charges are levied on a monthly basis. The penalty amount depends on the shortfall percentage and account type, typically ranging from Rs. 100 to Rs. 600 per month."
+  },
+  {
+    "id": 12,
+    "domain": "accounts",
+    "question": "What are the key benefits of a FinTrust salary account?",
+    "ground_truth": "Benefits include zero minimum balance requirement, free debit card, preferential interest rates on loans, free fund transfers, and overdraft facility up to 3 months' salary."
+  },
+  {
+    "id": 13,
+    "domain": "cards",
+    "question": "What are the annual fees for FinTrust credit cards?",
+    "ground_truth": "Annual fees vary by credit card variant — entry-level cards may have zero or low annual fees, while premium and super-premium cards can have fees ranging from Rs. 500 to Rs. 5,000 or more, sometimes waived on meeting spend milestones."
+  },
+  {
+    "id": 14,
+    "domain": "cards",
+    "question": "How does the credit card billing cycle work at FinTrust?",
+    "ground_truth": "The billing cycle is typically 30 days. A statement is generated at cycle end, and the customer has a grace period (usually 18-21 days) to pay the total amount due without interest."
+  },
+  {
+    "id": 15,
+    "domain": "cards",
+    "question": "What is the daily ATM withdrawal limit on FinTrust debit cards?",
+    "ground_truth": "The daily ATM cash withdrawal limit on FinTrust debit cards is typically Rs. 25,000 to Rs. 50,000, depending on the card variant."
+  },
+  {
+    "id": 16,
+    "domain": "cards",
+    "question": "How do I dispute a credit card transaction at FinTrust?",
+    "ground_truth": "Disputes can be raised via net banking, mobile app, or by calling the card helpline within 30 days of the statement. The bank investigates and issues a provisional credit if the dispute is valid."
+  },
+  {
+    "id": 17,
+    "domain": "compliance",
+    "question": "What is the threshold for Cash Transaction Report (CTR) filing?",
+    "ground_truth": "A Cash Transaction Report (CTR) must be filed for all cash transactions of Rs. 10 lakh or more in a single day, whether single or multiple transactions by the same customer."
+  },
+  {
+    "id": 18,
+    "domain": "compliance",
+    "question": "What actions must be taken when a customer is identified as a Politically Exposed Person (PEP)?",
+    "ground_truth": "PEP customers require enhanced due diligence including senior management approval for account opening, closer monitoring of transactions, more frequent KYC reviews, and detailed source-of-funds verification."
+  },
+  {
+    "id": 19,
+    "domain": "compliance",
+    "question": "What are the KYC refresh intervals for different customer categories?",
+    "ground_truth": "KYC refresh is required every 2 years for high-risk customers, every 8 years for medium-risk customers, and every 10 years for low-risk customers."
+  },
+  {
+    "id": 20,
+    "domain": "compliance",
+    "question": "What must a bank employee do if they suspect a transaction is suspicious?",
+    "ground_truth": "The employee must report it internally to the AML/compliance team immediately. If confirmed, a Suspicious Transaction Report (STR) must be filed with the Financial Intelligence Unit (FIU-IND) without alerting the customer."
+  },
+  {
+    "id": 21,
+    "domain": "digital_banking",
+    "question": "What two-factor authentication methods does FinTrust support for internet banking?",
+    "ground_truth": "FinTrust internet banking supports OTP via SMS, OTP via email, and hardware/software token-based authentication as second factors."
+  },
+  {
+    "id": 22,
+    "domain": "digital_banking",
+    "question": "What are the daily transaction limits for NEFT transfers via FinTrust internet banking?",
+    "ground_truth": "NEFT transaction limits via internet banking are typically up to Rs. 10 lakh per day for retail customers, subject to the beneficiary limit set by the customer."
+  },
+  {
+    "id": 23,
+    "domain": "digital_banking",
+    "question": "How does FinTrust handle failed UPI transactions?",
+    "ground_truth": "If a UPI transaction fails after the amount is debited, the amount is automatically reversed within 24-48 hours as per NPCI guidelines. Customers can also raise a complaint via the app."
+  },
+  {
+    "id": 24,
+    "domain": "digital_banking",
+    "question": "What is the daily limit for mobile banking fund transfers at FinTrust?",
+    "ground_truth": "The daily fund transfer limit via mobile banking is typically Rs. 2 lakh to Rs. 10 lakh depending on the customer's profile and account type."
+  }
+]
