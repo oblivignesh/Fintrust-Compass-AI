@@ -20,7 +20,7 @@ lsof -ti:8000 | xargs kill -9 2>/dev/null || true
 lsof -ti:8501 | xargs kill -9 2>/dev/null || true
 
 echo "Starting FinTrust Compass API on http://localhost:8000 ..."
-python -W ignore -m uvicorn api.main:app --host 0.0.0.0 --port 8000 &
+python -W ignore -m uvicorn api.main:app --host 0.0.0.0 --port 8000 --timeout-keep-alive 300 &
 API_PID=$!
 
 sleep 5

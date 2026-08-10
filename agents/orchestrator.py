@@ -88,6 +88,7 @@ def classify_node(state: AgentState) -> AgentState:
         model=os.getenv("GEMINI_LLM_MODEL", "gemini-2.0-flash"),
         google_api_key=os.getenv("GOOGLE_API_KEY"),
         temperature=0,
+        request_timeout=60,
     )
 
     messages = [

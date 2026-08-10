@@ -129,11 +129,12 @@ def _get_llm() -> ChatGoogleGenerativeAI:
         _llm = ChatGoogleGenerativeAI(
             model=os.getenv("GEMINI_LLM_MODEL", "gemini-2.5-flash"),
             temperature=0.1,
+            request_timeout=240,
         )
     return _llm
 
 
-# ── Pure arithmetic helpers ───────────────────────────────────────────────────
+# ── Pure arithmetic helpers ───────────────────────────────────────────────
 
 def _emi(principal: float, annual_rate: float, tenure_months: int) -> float:
     """Standard reducing-balance EMI formula."""

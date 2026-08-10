@@ -170,7 +170,10 @@ async def query_stream(request: QueryRequest):
         from langchain_core.messages import HumanMessage
 
         # Step 1: classify domain
-        llm = ChatGoogleGenerativeAI(model=llm_model, google_api_key=api_key, temperature=0)
+        llm = ChatGoogleGenerativeAI(
+            model=llm_model, google_api_key=api_key, temperature=0,
+            request_timeout=60,
+        )
         cls_msgs = [
             {"role": "system", "content": CLASSIFIER_SYSTEM},
             {"role": "user", "content": f"Query: {request.question}"},
@@ -201,7 +204,8 @@ async def query_stream(request: QueryRequest):
         from agents.specialist_agents import AGENT_REGISTRY
         agent_class = AGENT_REGISTRY[domain]
         stream_llm = ChatGoogleGenerativeAI(
-            model=llm_model, google_api_key=api_key, temperature=0.1, streaming=True
+            model=llm_model, google_api_key=api_key, temperature=0.1,
+            streaming=True, request_timeout=240,
         )
 
         domain_labels = {

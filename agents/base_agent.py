@@ -59,6 +59,7 @@ def _get_llm() -> ChatGoogleGenerativeAI:
         google_api_key=os.getenv("GOOGLE_API_KEY"),
         temperature=0.1,
         max_output_tokens=2048,
+        request_timeout=240,
     )
 
 
